@@ -1,6 +1,6 @@
 # climate
 
-A new Flutter project.
+Fetcht the latest news from this beautifully designed app made for both android and ios.
 
 ## Getting Started
 
