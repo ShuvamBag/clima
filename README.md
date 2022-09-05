@@ -1,6 +1,6 @@
 # climate
 
-Fetcht the latest news from this beautifully designed app made for both android and ios.
+Fetch the latest news from this beautifully designed app made for both android and ios.
 
 ## Getting Started
 
