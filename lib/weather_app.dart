@@ -164,7 +164,7 @@ class _WeatherAppState extends State<WeatherApp> {
                             padding: const EdgeInsets.fromLTRB(8, 30, 8, 120),
                             child: Container(
 
-                              margin: EdgeInsets.symmetric(vertical: 40),
+                              margin: EdgeInsets.symmetric(vertical: 50),
 
                               decoration: BoxDecoration(
                                   border: Border.all(
@@ -177,15 +177,21 @@ class _WeatherAppState extends State<WeatherApp> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(30,710, 30, 30),
+
+                    margin: EdgeInsets.fromLTRB(25,690, 25, 10),
                     child: Column(
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("Wind",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
-                            Text("Rain",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
-                            Text("Humidity",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),)
+                            Image.asset('assets/wind.png',color: Colors.white,height: 50,width: 50,),
+                            Image.asset('assets/pressure.png',color: Colors.white,height: 50,width: 50,),
+                            Image.asset('assets/humidity.png',color: Colors.white,height: 50,width: 50,),
+
+
+                            // Text("Wind",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
+                            //Text("Pressure",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
+                            //Text("Humidity",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),)
 
 
                           ],
@@ -198,11 +204,11 @@ class _WeatherAppState extends State<WeatherApp> {
                             children: [
                               Text("${data?.windspeed}",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white),),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 0, 27, 0),
-                                child: Text("${data?.rain}",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white),),
+                                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                child: Text("${data?.pressure}",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white),),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+                                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                                 child: Text("${data?.humidity}",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white),),
                               )
 
@@ -215,11 +221,11 @@ class _WeatherAppState extends State<WeatherApp> {
                           children: [
                             Text("Km/h",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white),),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 0, 30, 0),
-                              child: Text("%",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white),),
+                              padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
+                              child: Text("kPa",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white),),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 0, 32, 0),
+                              padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                               child: Text("%",style: GoogleFonts.lato(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white),),
                             )
 

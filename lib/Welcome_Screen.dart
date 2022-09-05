@@ -28,9 +28,9 @@ class _WelcomeState extends State<Welcome> {
           decoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: [
-                    Colors.blueAccent.shade400,
-                    Colors.pinkAccent,
-                    Colors.yellowAccent
+                    Colors.blue.shade800,
+                    Colors.pink.shade900,
+
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight
@@ -42,7 +42,7 @@ class _WelcomeState extends State<Welcome> {
               mainAxisAlignment: MainAxisAlignment.center,
 
               children: [
-                Image.asset("assets/umbrella.gif",),
+                Image.asset("assets/umbrellaa.png",),
                 AnimatedTextKit(
                     animatedTexts:[ScaleAnimatedText('clima',scalingFactor:0.5,textStyle: GoogleFonts.sacramento(fontSize: 120,color: Colors.white,fontWeight: FontWeight.bold),)]
                 ),
